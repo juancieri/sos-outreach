@@ -1,0 +1,194 @@
+// HOME
+.post-item {
+    max-width: 200px;
+    margin: 0 auto 50px auto;
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+    
+    figure {
+        overflow: hidden;
+        margin: 0 0 25px 0;
+        a {
+            display: block;
+        }
+        img {
+            @include border-radius(40%);
+            border: 4px solid $secondary-color;
+            transition: 0.3s;
+        }
+    }
+    
+    &-btn {
+        color: $primary-color;
+        text-align: center;
+        display: inline-block;
+        margin: 15px auto 0 auto;
+        font-family: $semibold;
+        font-size: 16px;
+        @include font-size(16px);
+        text-transform: uppercase;
+        transition: 0.3s;
+        
+        &:hover, &:focus {
+            text-decoration: none;
+            color: $active-color;
+        }
+        
+    }
+    
+    &-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        @include font-size(20px);
+        margin: 0 0 10px 0;
+        a {
+            color: $terciary-color;
+            transition: 0.3s;
+            
+            &:hover {
+                text-decoration: none;
+                color: $active-color;
+            }
+            
+        }
+    }
+    
+    &:hover {
+        top: -20px;
+        
+        figure img {
+            @include border-radius(50%);
+        }
+        .post-item-title a, .post-item-btn {
+            color: $active-color;
+        }
+    }
+    
+}
+
+// LATEST NEWS
+#latest-news {
+    padding-bottom: 120px;
+}
+
+// IMPACT
+.counter {
+    span {
+        display: inline-block;
+        background-color: #C1D027;
+        @include border-radius(42%);
+        color: $black;
+        font-family: $medium;
+        font-size: 73px;
+        @include font-size(73px);
+        line-height: 40px;
+        @include line-height(40px);
+        padding: 15px 20px 25px 20px;
+        
+        &:nth-child(odd) {
+            background-color: #CFDE00;
+        }
+        
+    }
+}
+#impact-map {
+    margin: 50px auto;
+}
+
+// FACES OF SOS
+#gallery {
+    .container-fluid {
+        padding: 0;
+        .col-xs-12 {
+            padding: 0;
+        }
+        .row {
+            margin: 0;
+        }
+    }
+}
+.face-item {
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 18px;
+    
+    &-text {
+        background-color: rgba($terciary-color, .9);
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: 0.3s;
+        
+        & > div {
+            margin-top: -100px;
+            transition: 0.3s;
+        }
+        
+        em {
+            display: block;
+            font-size: 20px;
+            @include font-size(20px);
+            color: $white;
+            font-family: $italic;
+            &:before {
+                content: "“";
+                display: block;
+                font-size: 100px;
+                @include font-size(100px);
+                line-height: 0;
+                margin-bottom: 15px;
+            }
+        }
+        span {
+            display: block;
+            margin: 10px;
+            text-align: center;
+            color: $white;
+            font-family: $semibold;
+            font-size: 20px;
+            @include font-size(20px);
+        }
+    }
+    
+    &:hover {
+        .face-item-text {
+            opacity: 1;
+            & > div {
+                margin-top: 40px;
+            }
+        }
+    }
+    
+    &.even {
+        .face-item-text {
+            background-color: rgba($primary-color, .9);
+        }
+    }
+    
+}
+
+// JOIN THE FAMILY
+#join-the-family {
+    padding-bottom: 35px;
+}
+.icon-title {
+    text-transform: uppercase;
+    color: $terciary-color;
+    margin: 15px auto 10px auto;
+    font-family: $medium;
+    font-size: 20px;
+    @include font-size(20px);
+}
+
+// SPONSORS
+#sponsors {
+    padding: 35px 0;
+    margin-bottom: -270px;
+}

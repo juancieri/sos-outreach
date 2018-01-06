@@ -5,6 +5,7 @@
 @import 'helpers/_variables';
 @import 'helpers/_mixins';
 @import 'components/_fonts';
+@import 'components/_forms';
 @import 'layout/_grid';
 
 // COMMON
@@ -21,6 +22,10 @@ p {
     margin: 0 auto;
     font-size: 15px;
     @include font-size(15px);
+}
+.img-block {
+    display: block;
+    margin: 0 auto;
 }
 
 .fullHeight {
@@ -147,6 +152,11 @@ section {
         margin-left: -60px
     }
     
+    & + p {
+        max-width: 507px;
+        margin: 0 auto 70px auto;
+    }
+    
 }
 .header-title {
     color: $white;
@@ -165,94 +175,6 @@ section {
         line-height: 25px;
         @include line-height(25px);
     }
-}
-
-// POST ITEM
-.post-item {
-    &-title {
-        text-transform: uppercase;
-        font-size: 20px;
-        @include font-size(20px);
-        margin: 0 0 10px 0;
-        a {
-            color: $terciary-color;
-            transition: 0.3s;
-            
-            &:hover {
-                text-decoration: none;
-                color: $active-color;
-            }
-            
-        }
-    }
-}
-
-// FACES OF SOS
-#gallery {
-    .container-fluid {
-        .col-xs-12 {
-            padding: 0;
-        }
-        .row {
-            margin: 0;
-        }
-    }
-}
-.face-item {
-    height: 350px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 18px;
-    
-    &-text {
-        background-color: rgba($terciary-color, .9);
-        padding: 20px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: 0.3s;
-        
-        & > div {
-            margin-top: -100px;
-            transition: 0.3s;
-        }
-        
-        em {
-            display: block;
-            font-size: 20px;
-            @include font-size(20px);
-            color: $white;
-            font-family: $italic;
-            &:before {
-                content: "“";
-                display: block;
-                font-size: 100px;
-                @include font-size(100px);
-                line-height: 0;
-                margin-bottom: 15px;
-            }
-        }
-    }
-    
-    &:hover {
-        .face-item-text {
-            opacity: 1;
-            & > div {
-                margin-top: 0;
-            }
-        }
-    }
-    
-    &.even {
-        .face-item-text {
-            background-color: rgba($primary-color, .9);
-        }
-    }
-    
 }
 
 @import 'layout/_header';

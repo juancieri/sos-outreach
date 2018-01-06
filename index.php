@@ -15,11 +15,12 @@ require("part-head.php");
             
             <section class="fullHeight" style="background-image: url('img/home-banner.jpg');">
                 <img src="img/misc.png" alt="" class="header-misc">
-                <div>
+                <div class="wow fadeInUp">
                     <h1 class="header-title">Inspiring youth <span>to make positive decisions for healthy &amp; successful lives.</span></h1>
                 </div>
             </section>
             
+            <!-- WHAT WE DO -->
             <section class="section bg-white separator-before">
                 <div class="container">
                     <div class="row">
@@ -33,7 +34,7 @@ require("part-head.php");
                             <div class="post-item text-center">
                                 <figure>
                                     <a href="#">
-                                        <img src="img/.jpg" alt="" class="img-responsive img-circle">
+                                        <img src="img/thumb1.jpg" alt="" class="img-responsive">
                                     </a>
                                 </figure>
                                 <figcaption>
@@ -47,7 +48,7 @@ require("part-head.php");
                             <div class="post-item">
                                 <figure>
                                     <a href="#">
-                                        <img src="img/.jpg" alt="" class="img-responsive img-circle">
+                                        <img src="img/thumb2.jpg" alt="" class="img-responsive">
                                     </a>
                                 </figure>
                                 <figcaption>
@@ -61,7 +62,7 @@ require("part-head.php");
                             <div class="post-item text-center">
                                 <figure>
                                     <a href="#">
-                                        <img src="img/.jpg" alt="" class="img-responsive img-circle">
+                                        <img src="img/thumb1.jpg" alt="" class="img-responsive">
                                     </a>
                                 </figure>
                                 <figcaption>
@@ -74,8 +75,10 @@ require("part-head.php");
                     </div>
                 </div>
             </section>
+            <!-- /WHAT WE DO -->
             
-            <section class="section bg-lightgray separator-before padding-bottom">
+            <!-- LATEST NEWS -->
+            <section id="latest-news" class="section bg-lightgray separator-before padding-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 text-center">
@@ -88,7 +91,7 @@ require("part-head.php");
                             <div class="post-item text-center">
                                 <figure>
                                     <a href="#">
-                                        <img src="img/.jpg" alt="" class="img-responsive img-circle">
+                                        <img src="img/thumb2.jpg" alt="" class="img-responsive">
                                     </a>
                                 </figure>
                                 <figcaption>
@@ -102,7 +105,7 @@ require("part-head.php");
                             <div class="post-item text-center">
                                 <figure>
                                     <a href="#">
-                                        <img src="img/.jpg" alt="" class="img-responsive img-circle">
+                                        <img src="img/thumb1.jpg" alt="" class="img-responsive">
                                     </a>
                                 </figure>
                                 <figcaption>
@@ -116,7 +119,7 @@ require("part-head.php");
                             <div class="post-item text-center">
                                 <figure>
                                     <a href="#">
-                                        <img src="img/.jpg" alt="" class="img-responsive img-circle">
+                                        <img src="img/thumb2.jpg" alt="" class="img-responsive">
                                     </a>
                                 </figure>
                                 <figcaption>
@@ -129,7 +132,9 @@ require("part-head.php");
                     </div>
                 </div>
             </section>
+            <!-- /LATEST NEWS -->
             
+            <!-- IMPACT -->
             <section class="section bg-gray separator-before">
                 <div class="container">
                     <div class="row">
@@ -140,13 +145,20 @@ require("part-head.php");
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <div class="counter" data-count="50000">0</div>
+                            <div class="counter" data-count="50000"><span>5</span><span>0</span><span>0</span><span>0</span><span>0</span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                            <img id="impact-map" src="img/map.png" alt="" class="img-responsive">
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- /IMPACT -->
             
-            <section class="section gray-bg">
+            <!-- FACES OF SOS -->
+            <section class="section bg-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 text-center">
@@ -154,11 +166,11 @@ require("part-head.php");
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid">
-                    <div id="gallery">
+                <div id="gallery">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-5">
-                                <div class="face-item" style="background-image:url('img/.jpg');">
+                                <div class="face-item" style="background-image:url('img/faces-01.jpg');">
                                     <div class="face-item-text text-center">
                                         <div>
                                             <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </em>
@@ -168,17 +180,17 @@ require("part-head.php");
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-3">
-                                <div class="face-item even" style="background-image:url('img/.jpg');">
+                                <div class="face-item even" style="background-image:url('img/faces-02.jpg');">
                                     <div class="face-item-text text-center">
                                         <div>
-                                            <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </em>
+                                            <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </em>
                                             <span>Stuart Turner</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4">
-                                <div class="face-item" style="background-image:url('img/.jpg');">
+                                <div class="face-item" style="background-image:url('img/faces-03.jpg');">
                                     <div class="face-item-text text-center">
                                         <div>
                                             <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </em>
@@ -190,7 +202,7 @@ require("part-head.php");
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
-                                <div class="face-item even" style="background-image:url('img/.jpg');">
+                                <div class="face-item even" style="background-image:url('img/faces-04.jpg');">
                                     <div class="face-item-text text-center">
                                         <div>
                                             <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </em>
@@ -200,7 +212,7 @@ require("part-head.php");
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
-                                <div class="face-item" style="background-image:url('img/.jpg');">
+                                <div class="face-item" style="background-image:url('img/faces-05.jpg');">
                                     <div class="face-item-text text-center">
                                         <div>
                                             <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </em>
@@ -213,6 +225,7 @@ require("part-head.php");
                     </div>
                 </div>
             </section>
+            <!-- /FACES OF SOS -->
             
             <!-- Join the Family -->
             <?php require('part-join.php'); ?>
@@ -230,7 +243,7 @@ require("part-head.php");
         
         <script>
             $(document).ready(function(){
-                counterInit();
+                initCarousel();
             });
         </script>
         

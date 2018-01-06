@@ -36,6 +36,39 @@
   font-weight: normal;
   font-style: normal; }
 
+.form {
+  position: relative; }
+  .form-control-label {
+    color: white;
+    font-family: "ArcherPro-Medium", sans-serif;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: normal;
+    letter-spacing: 1px; }
+  .form-control {
+    background-color: #C2C4C6;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    color: white;
+    font-family: "ArcherPro-MediumItalic", sans-serif;
+    font-size: 13px;
+    font-size: 0.8125rem; }
+
+.arrow-submit {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "ArcherPro-MediumItalic", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 25px;
+  right: 10px; }
+
 body, html {
   font-size: 16px; }
 
@@ -48,6 +81,10 @@ p {
   margin: 0 auto;
   font-size: 15px;
   font-size: 0.9375rem; }
+
+.img-block {
+  display: block;
+  margin: 0 auto; }
 
 .fullHeight {
   min-height: 100vh;
@@ -146,6 +183,9 @@ section {
     height: 42px;
     width: 42px;
     margin-left: -60px; }
+  .section-title + p {
+    max-width: 507px;
+    margin: 0 auto 70px auto; }
 
 .header-title {
   color: white;
@@ -163,75 +203,6 @@ section {
     font-size: 2.5rem;
     line-height: 25px;
     line-height: 1.5625rem; }
-
-.post-item-title {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-size: 1.25rem;
-  margin: 0 0 10px 0; }
-  .post-item-title a {
-    color: #008CAD;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    .post-item-title a:hover {
-      text-decoration: none;
-      color: #EC008C; }
-
-#gallery .container-fluid .col-xs-12 {
-  padding: 0; }
-
-#gallery .container-fluid .row {
-  margin: 0; }
-
-.face-item {
-  height: 350px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 18px; }
-  .face-item-text {
-    background-color: rgba(0, 140, 173, 0.9);
-    padding: 20px;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    .face-item-text > div {
-      margin-top: -100px;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
-    .face-item-text em {
-      display: block;
-      font-size: 20px;
-      font-size: 1.25rem;
-      color: white;
-      font-family: "ArcherPro-MediumItalic", sans-serif; }
-      .face-item-text em:before {
-        content: "“";
-        display: block;
-        font-size: 100px;
-        font-size: 6.25rem;
-        line-height: 0;
-        margin-bottom: 15px; }
-  .face-item:hover .face-item-text {
-    opacity: 1; }
-    .face-item:hover .face-item-text > div {
-      margin-top: 0; }
-  .face-item.even .face-item-text {
-    background-color: rgba(227, 111, 30, 0.9); }
 
 header {
   position: fixed;
@@ -293,6 +264,20 @@ header {
   .header-nav li {
     display: inline-block; }
 
+footer {
+  padding-bottom: 64px;
+  padding-top: 390px;
+  background-image: url(../../img/footer-bg.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  footer .social {
+    padding: 0;
+    list-style: none;
+    margin: 0; }
+    footer .social li {
+      display: inline-block; }
+
 .owl-carousel {
   position: relative;
   overflow: hidden; }
@@ -351,6 +336,168 @@ header {
         border-radius: 30px; }
       .owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span {
         background: #E36F1E; }
+
+.post-item {
+  max-width: 200px;
+  margin: 0 auto 50px auto;
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .post-item figure {
+    overflow: hidden;
+    margin: 0 0 25px 0; }
+    .post-item figure a {
+      display: block; }
+    .post-item figure img {
+      -webkit-border-radius: 40%;
+      -moz-border-radius: 40%;
+      -ms-border-radius: 40%;
+      border-radius: 40%;
+      border: 4px solid #CFDE00;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+  .post-item-btn {
+    color: #E36F1E;
+    text-align: center;
+    display: inline-block;
+    margin: 15px auto 0 auto;
+    font-family: "ArcherPro-Semibold", sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .post-item-btn:hover, .post-item-btn:focus {
+      text-decoration: none;
+      color: #EC008C; }
+  .post-item-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin: 0 0 10px 0; }
+    .post-item-title a {
+      color: #008CAD;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .post-item-title a:hover {
+        text-decoration: none;
+        color: #EC008C; }
+  .post-item:hover {
+    top: -20px; }
+    .post-item:hover figure img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+    .post-item:hover .post-item-title a, .post-item:hover .post-item-btn {
+      color: #EC008C; }
+
+#latest-news {
+  padding-bottom: 120px; }
+
+.counter span {
+  display: inline-block;
+  background-color: #C1D027;
+  -webkit-border-radius: 42%;
+  -moz-border-radius: 42%;
+  -ms-border-radius: 42%;
+  border-radius: 42%;
+  color: #333132;
+  font-family: "ArcherPro-Medium", sans-serif;
+  font-size: 73px;
+  font-size: 4.5625rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  padding: 15px 20px 25px 20px; }
+  .counter span:nth-child(odd) {
+    background-color: #CFDE00; }
+
+#impact-map {
+  margin: 50px auto; }
+
+#gallery .container-fluid {
+  padding: 0; }
+  #gallery .container-fluid .col-xs-12 {
+    padding: 0; }
+  #gallery .container-fluid .row {
+    margin: 0; }
+
+.face-item {
+  height: 350px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 18px; }
+  .face-item-text {
+    background-color: rgba(0, 140, 173, 0.9);
+    padding: 20px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .face-item-text > div {
+      margin-top: -100px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .face-item-text em {
+      display: block;
+      font-size: 20px;
+      font-size: 1.25rem;
+      color: white;
+      font-family: "ArcherPro-MediumItalic", sans-serif; }
+      .face-item-text em:before {
+        content: "“";
+        display: block;
+        font-size: 100px;
+        font-size: 6.25rem;
+        line-height: 0;
+        margin-bottom: 15px; }
+    .face-item-text span {
+      display: block;
+      margin: 10px;
+      text-align: center;
+      color: white;
+      font-family: "ArcherPro-Semibold", sans-serif;
+      font-size: 20px;
+      font-size: 1.25rem; }
+  .face-item:hover .face-item-text {
+    opacity: 1; }
+    .face-item:hover .face-item-text > div {
+      margin-top: 40px; }
+  .face-item.even .face-item-text {
+    background-color: rgba(227, 111, 30, 0.9); }
+
+#join-the-family {
+  padding-bottom: 35px; }
+
+.icon-title {
+  text-transform: uppercase;
+  color: #008CAD;
+  margin: 15px auto 10px auto;
+  font-family: "ArcherPro-Medium", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+#sponsors {
+  padding: 35px 0;
+  margin-bottom: -270px; }
 
 ::-webkit-scrollbar {
   width: 0.5em;

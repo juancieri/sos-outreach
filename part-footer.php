@@ -1,4 +1,4 @@
-<footer>
+<footer class="bg-gray">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-3">
@@ -8,7 +8,7 @@
                         <input type="email" name="newsletter" class="form-control" required data-required-error="Required Field" placeholder="email@domain.com">
                         <div class="help-block with-errors"></div>
                     </div>
-                    <button type="submit" name="submit">&#62;</button>
+                    <button type="submit" name="submit" class="arrow-submit">&#62;</button>
                 </form>
             </div>
             <div class="col-xs-12 col-sm-3">

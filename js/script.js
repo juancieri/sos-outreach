@@ -28,7 +28,7 @@ function initEditorResponsive() {
 }
 
 /* COUNTER */
-function counterInit(){
+/*function counterInit(){
     $('.counter').each(function() {
       var $this = $(this),
       countTo = $this.attr('data-count');
@@ -51,7 +51,7 @@ function counterInit(){
 
       });  
     });
-};
+};*/
 
 /* HEADER CLASS ON SCROLL */
 $(window).scroll(function() {    
@@ -63,3 +63,35 @@ $(window).scroll(function() {
         $("header").removeClass("smaller");
     }
 });
+
+/* SPONSOR CAROUSEL */
+function initCarousel() {
+    $('#sponsorCarousel').owlCarousel({
+        merge:false,
+        loop:false,
+        margin:30,
+        lazyLoad:false,
+        center:false,
+        nav: true,
+        navText: [
+           "<i class='fa fa-angle-left fa-2x' aria-hidden='true'></i>",
+            "<i class='fa fa-angle-right fa-2x' aria-hidden='true'></i>"
+        ],
+        autoplay: true,
+        autoplayTimeout: 100,
+        autoplayHoverPause: true,
+        dots: false,
+        dotsEach: false,
+        responsive : {
+            0 : {
+                items: 2,
+            },
+            480 : {
+                items: 3
+            },
+            768 : {
+                items: 5,
+            }
+        },
+    });
+}
