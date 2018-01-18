@@ -33,6 +33,8 @@
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
         <!-- Font Awesome-->
         <script src="https://use.fontawesome.com/c017ea6a5a.js"></script>
+        <!-- Google Maps-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrg4NpfJDFZyJ96Ta7EEcuIXKCrKi_X6U"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->

@@ -6,5 +6,6 @@
 <script src="js/min/placeholder.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 <script src="js/min/owl.carousel.min.js"></script>
+<script src="js/min/jquery.lettering-0.6.1.min.js"></script>
 <script src="js/min/script.min.js"></script>
 <script>new WOW().init();</script>

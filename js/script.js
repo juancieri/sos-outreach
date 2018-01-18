@@ -95,3 +95,8 @@ function initCarousel() {
         },
     });
 }
+
+/* LETTERING */
+function initLettering() {
+    $(".lettering").lettering();
+}

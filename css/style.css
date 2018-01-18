@@ -37,25 +37,35 @@
   font-style: normal; }
 
 .form {
-  position: relative; }
-  .form-control-label {
-    color: white;
-    font-family: "ArcherPro-Medium", sans-serif;
+  font-family: "ArcherPro-Medium", sans-serif; }
+  .form .control-label {
+    color: #E36F1E;
+    font-weight: 400;
+    text-transform: uppercase;
     font-size: 13px;
-    font-size: 0.8125rem;
-    font-weight: normal;
-    letter-spacing: 1px; }
+    font-size: 0.8125rem; }
   .form-control {
-    background-color: #C2C4C6;
     border: none;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    color: white;
+    color: #A7AAAC;
     font-family: "ArcherPro-MediumItalic", sans-serif;
-    font-size: 13px;
-    font-size: 0.8125rem; }
+    font-size: 14px;
+    font-size: 0.875rem;
+    background-color: #F2F2F3;
+    border: 1px solid #F2F2F3; }
+  .form textarea {
+    height: 260px; }
+  .form .form-group {
+    position: relative; }
+  .form .post-item-btn {
+    margin: 0; }
+  .form .has-error .form-control {
+    background-color: rgba(255, 0, 0, 0.3);
+    border: 1px solid red;
+    color: white; }
 
 .arrow-submit {
   background: none;
@@ -68,6 +78,20 @@
   position: absolute;
   top: 25px;
   right: 10px; }
+
+footer .form {
+  position: relative; }
+  footer .form-control-label {
+    color: white;
+    font-family: "ArcherPro-Medium", sans-serif;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: normal;
+    letter-spacing: 1px; }
+  footer .form-control {
+    background-color: #C2C4C6;
+    color: white;
+    border-color: #C2C4C6; }
 
 body, html {
   font-size: 16px; }
@@ -104,13 +128,30 @@ p {
   @media (min-width: 768px) {
     .fullHeight {
       background-attachment: fixed; } }
+  @media (max-width: 600px) {
+    .fullHeight {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
   .fullHeight > div {
     padding: 10em; }
+    @media (max-width: 840px) {
+      .fullHeight > div {
+        padding: 7em; } }
+    @media screen and (max-width: 768px) {
+      .fullHeight > div {
+        padding: 5em; } }
+    @media (max-width: 600px) {
+      .fullHeight > div {
+        padding: 5em 25px; } }
 
 .header-misc {
   position: absolute;
   left: -50px;
   bottom: -50px; }
+  @media (max-width: 600px) {
+    .header-misc {
+      opacity: 0.3; } }
 
 section {
   padding: 40px 0;
@@ -132,7 +173,10 @@ section {
     background-image: url(../../img/separator-before-white.svg);
     background-repeat: repeat-x;
     background-position: center center;
-    background-size: 100%; }
+    background-size: 110%; }
+    @media screen and (max-width: 1200px) {
+      .bg-white.separator-before:before {
+        background-size: 110% 100%; } }
 
 .bg-lightgray {
   background-color: #E6E7E8; }
@@ -195,14 +239,49 @@ section {
   margin: 0;
   max-width: 500px;
   text-align: right;
-  line-height: 50px;
-  line-height: 3.125rem; }
+  line-height: 80px;
+  line-height: 5rem; }
   .header-title span {
+    display: block;
     font-family: "ArcherPro-Light", sans-serif;
     font-size: 40px;
     font-size: 2.5rem;
-    line-height: 25px;
-    line-height: 1.5625rem; }
+    line-height: 50px;
+    line-height: 3.125rem; }
+  @media screen and (max-width: 768px) {
+    .header-title {
+      font-size: 50px;
+      font-size: 3.125rem;
+      line-height: 55px;
+      line-height: 3.4375rem; }
+      .header-title span {
+        font-size: 25px;
+        font-size: 1.5625rem;
+        line-height: 35px;
+        line-height: 2.1875rem; } }
+  @media (max-width: 600px) {
+    .header-title {
+      text-align: center; } }
+
+.btn {
+  outline: none;
+  font-family: "ArcherPro-Medium", sans-serif;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .btn-menu {
+    text-transform: uppercase;
+    color: white !important;
+    background-color: #E36F1E;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 0; }
 
 header {
   position: fixed;
@@ -220,6 +299,9 @@ header {
       max-width: 100px; }
     header.smaller .header-nav {
       padding-top: 10px; }
+  header .btn-menu {
+    position: relative;
+    top: -12px; }
 
 .logo {
   -webkit-transition: 0.3s;
@@ -228,6 +310,9 @@ header {
   position: absolute;
   left: 0;
   top: 0; }
+  @media screen and (max-width: 768px) {
+    .logo {
+      max-width: 120px; } }
 
 .toggle-menu {
   background-color: transparent;
@@ -262,7 +347,10 @@ header {
     padding: 0;
     margin: 0; }
   .header-nav li {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0 5px; }
+  .header-nav a {
+    color: #E36F1E; }
 
 footer {
   padding-bottom: 64px;
@@ -270,13 +358,17 @@ footer {
   background-image: url(../../img/footer-bg.png);
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100% 100%; }
+  #contact footer {
+    background-color: white; }
   footer .social {
     padding: 0;
     list-style: none;
     margin: 0; }
     footer .social li {
       display: inline-block; }
+  footer img {
+    margin: 0 auto; }
 
 .owl-carousel {
   position: relative;
@@ -370,7 +462,9 @@ footer {
     text-transform: uppercase;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    background: transparent;
+    border: none; }
     .post-item-btn:hover, .post-item-btn:focus {
       text-decoration: none;
       color: #EC008C; }
@@ -486,6 +580,9 @@ footer {
 
 #join-the-family {
   padding-bottom: 35px; }
+  @media screen and (max-width: 768px) {
+    #join-the-family .block-item {
+      margin: 50px 15px; } }
 
 .icon-title {
   text-transform: uppercase;
@@ -498,6 +595,32 @@ footer {
 #sponsors {
   padding: 35px 0;
   margin-bottom: -270px; }
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px; }
+
+#contact .section {
+  padding-bottom: 0; }
+
+#contact footer {
+  margin-top: -120px; }
+
+#contact-container {
+  background-color: transparent; }
+
+.map-title {
+  color: #E36F1E;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-size: 1rem; }
+
+.map-address {
+  color: #333132;
+  font-family: "ArcherPro-Book", sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem; }
 
 ::-webkit-scrollbar {
   width: 0.5em;

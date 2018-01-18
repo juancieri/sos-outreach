@@ -1,7 +1,7 @@
 <?php
-$titlePage = "Titulo del Page";
-$pageDescription = "Descripción del Page";
-$pageKeywords = "Keywords del Page";
+$titlePage = "Homepage";
+$pageDescription = "";
+$pageKeywords = "";
 require("part-head.php");
 ?>
 
@@ -145,7 +145,7 @@ require("part-head.php");
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <div class="counter" data-count="50000"><span>5</span><span>0</span><span>0</span><span>0</span><span>0</span></div>
+                            <div class="counter lettering" data-count="50000">5000</div>
                         </div>
                     </div>
                     <div class="row">
@@ -244,6 +244,7 @@ require("part-head.php");
         <script>
             $(document).ready(function(){
                 initCarousel();
+                initLettering();
             });
         </script>
         

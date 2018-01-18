@@ -1,7 +1,7 @@
 <footer class="bg-gray">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-4">
                 <form role="form" action="" class="form" data-toggle="validator">
                     <div class="form-group">
                         <label for="email" class="form-control-label">Suscribe to our newsletter</label>
@@ -11,10 +11,10 @@
                     <button type="submit" name="submit" class="arrow-submit">&#62;</button>
                 </form>
             </div>
-            <div class="col-xs-12 col-sm-3">
-                <img src="img/.png" alt="" class="img-responsive">
+            <div class="col-xs-12 col-sm-4 text-center">
+                <img src="img/footer-stats.png" alt="" class="img-responsive">
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-4 text-right">
                 <ul class="social">
                     <li>
                         <a href="#" target="_blank" data-toggle="tooltip" data-placement="top" data-title="Instagram">

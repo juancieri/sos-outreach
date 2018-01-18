@@ -29,6 +29,8 @@
         @include font-size(16px);
         text-transform: uppercase;
         transition: 0.3s;
+        background: transparent;
+        border: none;
         
         &:hover, &:focus {
             text-decoration: none;
@@ -177,6 +179,13 @@
 // JOIN THE FAMILY
 #join-the-family {
     padding-bottom: 35px;
+    
+    .block-item {
+        @include media-xs {
+            margin: 50px 15px;
+        }
+    }
+    
 }
 .icon-title {
     text-transform: uppercase;

@@ -18,6 +18,11 @@ header {
         }
     }
     
+    .btn-menu {
+        position: relative;
+        top: -12px;
+    }
+    
 }
 
 .logo {
@@ -25,6 +30,11 @@ header {
     position: absolute;
     left: 0;
     top: 0;
+    
+    @include media-xs {
+        max-width: 120px;
+    }
+    
 }
 
 .toggle-menu {
@@ -61,5 +71,9 @@ header {
     }
     li {
         display: inline-block;
+        margin: 0 5px;
+    }
+    a {
+        color: $primary-color;
     }
 }
