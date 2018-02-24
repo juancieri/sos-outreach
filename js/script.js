@@ -66,7 +66,7 @@ $(window).scroll(function() {
 
 /* SPONSOR CAROUSEL */
 function initCarousel() {
-    $('#sponsorCarousel').owlCarousel({
+    $('.sponsorCarousel').owlCarousel({
         merge:false,
         loop:false,
         margin:30,

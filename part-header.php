@@ -14,7 +14,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank" class="btn btn-menu">Donate</a>
+                                <a href="get-involved.php" target="_blank" class="btn btn-menu">Donate</a>
                             </li>
                             <li>
                                 <button type="button" class="toggle-menu">

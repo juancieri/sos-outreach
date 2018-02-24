@@ -28,6 +28,11 @@ p {
     margin: 0 auto;
 }
 
+.spacer {
+    height: 50px;
+    display: block;
+}
+
 .fullHeight {
     min-height: 100vh;
     width: 100%;
@@ -146,8 +151,16 @@ section {
             background-position: top center;
             background-size: 100%;
         }
+        &.white {
+            &:before {
+                background-color: $white;
+            }
+        }
     }
     
+}
+.bg-after-white + .bg-gray {
+    background-color: $white !important;
 }
 
 // TITLES
@@ -176,6 +189,14 @@ section {
         margin: 0 auto 70px auto;
     }
     
+}
+.section-subtitle {
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0 0 50px 0;
+    font-family: $semibold;
+    font-size: 24px;
+    @include font-size(24px);
 }
 .header-title {
     color: $white;
@@ -241,6 +262,7 @@ section {
 
 // PAGES
 @import 'pages/_home';
+@import 'pages/_about';
 @import 'pages/_contact';
 
 // CUSTOM SCROLLBAR
