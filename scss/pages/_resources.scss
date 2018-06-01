@@ -3,3 +3,56 @@
         background-color: $white;
     }
 }
+
+.panel-group {
+    margin-bottom: 40px;
+    
+    .panel-heading {
+        padding: 0;
+        transition: 0.3s;
+    }
+    .panel-title a {
+        display: block;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $primary-color;
+        font-family: $medium;
+        font-size: 13px;
+        @include font-size(13px);
+        transition: 0.3s;
+        
+        &.collapsed {
+            color: $primary-color;
+            background-color: #f5f5f5;
+        }
+        
+        &:hover, &:focus {
+            color: $white;
+            text-decoration: none;
+            background-color: $primary-color;
+        }
+        
+    }
+    .panel-body, .panel-body p {
+        color: $black;
+        font-family: $book;
+        margin: 0 auto;
+        font-size: 15px;
+        @include font-size(15px);
+    }
+}
+
+.gray-block {
+    background-color: #f2f2f3;
+    padding: 15px;
+    margin: 0 0 30px 0;
+    .form {
+        a {
+            color: $primary-color;
+        }
+        &-control {
+            background-color: $white;
+        }
+    }
+}
