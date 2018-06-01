@@ -1,4 +1,4 @@
-<section class="section bg-gray">
+<section id="faces-of-sos" class="section bg-gray">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center">

@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $medium;
 }
 
+main {
+    transition: 0.3s;
+}
+
 p {
     color: $black;
     font-family: $book;
@@ -83,6 +87,10 @@ section {
         padding-bottom: 170px;
     }
     
+}
+
+.first-section {
+    padding-top: 200px;
 }
 
 // BACKGROUNDS
@@ -189,6 +197,10 @@ section {
         margin: 0 auto 70px auto;
     }
     
+    &.alone {
+        margin: 30px auto 60px auto;
+    }
+    
 }
 .section-subtitle {
     text-transform: uppercase;
@@ -197,6 +209,15 @@ section {
     font-family: $semibold;
     font-size: 24px;
     @include font-size(24px);
+    
+    &.terciary {
+        color: $terciary-color;
+    }
+    
+    &.top-margin {
+        margin-top: 40px;
+    }
+    
 }
 .header-title {
     color: $white;
@@ -252,6 +273,11 @@ section {
         padding: 10px 25px;
         display: inline-block;
         margin: 0;
+        
+        &:hover {
+            background-color: $black;
+        }
+        
     }
     
 }
@@ -264,6 +290,9 @@ section {
 @import 'pages/_home';
 @import 'pages/_about';
 @import 'pages/_contact';
+@import 'pages/_impact';
+@import 'pages/_post';
+@import 'pages/_resources';
 
 // CUSTOM SCROLLBAR
 @include scrollbars(.5em, $primary-color);

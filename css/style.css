@@ -99,6 +99,11 @@ body, html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "ArcherPro-Medium", sans-serif; }
 
+main {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
 p {
   color: #333132;
   font-family: "ArcherPro-Book", sans-serif;
@@ -162,6 +167,9 @@ section {
   position: relative; }
   section.padding-bottom {
     padding-bottom: 170px; }
+
+.first-section {
+  padding-top: 200px; }
 
 .bg-white {
   background-color: white; }
@@ -239,6 +247,8 @@ section {
   .section-title + p {
     max-width: 507px;
     margin: 0 auto 70px auto; }
+  .section-title.alone {
+    margin: 30px auto 60px auto; }
 
 .section-subtitle {
   text-transform: uppercase;
@@ -247,6 +257,10 @@ section {
   font-family: "ArcherPro-Semibold", sans-serif;
   font-size: 24px;
   font-size: 1.5rem; }
+  .section-subtitle.terciary {
+    color: #008CAD; }
+  .section-subtitle.top-margin {
+    margin-top: 40px; }
 
 .header-title {
   color: white;
@@ -299,6 +313,8 @@ section {
     padding: 10px 25px;
     display: inline-block;
     margin: 0; }
+    .btn-menu:hover {
+      background-color: #333132; }
 
 header {
   position: fixed;
@@ -318,7 +334,10 @@ header {
       padding-top: 10px; }
   header .btn-menu {
     position: relative;
-    top: -12px; }
+    top: -12px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .logo {
   -webkit-transition: 0.3s;
@@ -367,7 +386,126 @@ header {
     display: inline-block;
     margin: 0 5px; }
   .header-nav a {
-    color: #E36F1E; }
+    color: #E36F1E;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .header-nav a:hover {
+      color: #333132; }
+
+.overlay-menu {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999999998;
+  display: none; }
+
+.side-menu {
+  position: fixed;
+  z-index: 999999999;
+  background-color: #E36F1E;
+  color: white;
+  margin: 0;
+  padding: 20px 20px 60px 20px;
+  right: 0;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  max-width: 320px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%); }
+  @media (max-height: 320px) {
+    .side-menu {
+      overflow-y: scroll; } }
+  .side-menu > div {
+    position: relative;
+    height: 100%; }
+  .side-menu.open {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+    .side-menu.open + .overlay-menu {
+      display: block; }
+    .side-menu.open ~ header, .side-menu.open ~ main {
+      -webkit-transform: translateX(-320px);
+      -ms-transform: translateX(-320px);
+      transform: translateX(-320px); }
+    .side-menu.open .toggle-menu {
+      display: block; }
+  .side-menu .toggle-menu {
+    position: absolute;
+    top: 25px;
+    left: -45px;
+    font-size: 25px;
+    outline: none;
+    display: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: white;
+    z-index: 999999999; }
+    @media (max-width: 330px) {
+      .side-menu .toggle-menu {
+        left: 15px; } }
+
+.side-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .side-ul li {
+    margin: 10px 15px; }
+  .side-ul a {
+    text-transform: uppercase;
+    color: white;
+    font-family: "ArcherPro-Semibold", sans-serif;
+    font-size: 20px;
+    font-size: 1.25rem;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .side-ul a:hover {
+      color: #333132;
+      text-decoration: none; }
+
+.side-social {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 320px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 14px; }
+  .side-social-ul {
+    padding: 0 15px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .side-social li {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: inline;
+    margin: 10px 5px; }
+  .side-social a {
+    display: inline-block; }
 
 footer {
   padding-bottom: 64px;
@@ -651,6 +789,9 @@ footer {
       bottom: 0;
       left: 0; }
 
+#contactUs-page footer, #thanks-page footer {
+  background-color: white; }
+
 #map {
   width: 100%;
   height: 300px;
@@ -676,6 +817,107 @@ footer {
   font-family: "ArcherPro-Book", sans-serif;
   font-size: 18px;
   font-size: 1.125rem; }
+
+#impact-page #faces-of-sos, #impact-page #join-the-family, #impact-page footer {
+  background-color: white; }
+
+#impact-page #faces-of-sos {
+  margin-top: 100px; }
+
+.number-item {
+  max-width: 195px;
+  margin: 0 auto 40px auto; }
+  .number-item span {
+    background-color: #CFDE00;
+    padding: 20px 15px;
+    text-align: center;
+    -webkit-border-radius: 42%;
+    -moz-border-radius: 42%;
+    -ms-border-radius: 42%;
+    border-radius: 42%;
+    display: block;
+    color: #333132;
+    font-family: "ArcherPro-Medium", sans-serif;
+    font-size: 95px;
+    font-size: 5.9375rem;
+    margin: 0 0 30px 0; }
+
+blockquote {
+  color: #E36F1E;
+  text-align: center;
+  font-family: "ArcherPro-MediumItalic", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  border: none;
+  position: relative;
+  margin-top: 70px; }
+  blockquote:before {
+    content: "“";
+    position: absolute;
+    top: -20px;
+    font-size: 100px;
+    font-size: 6.25rem;
+    line-height: 0;
+    left: 50%;
+    -webkit-transform: translate(-20px);
+    -ms-transform: translate(-20px);
+    transform: translate(-20px); }
+  blockquote span {
+    display: block;
+    margin-top: 30px;
+    font-family: "ArcherPro-Medium", sans-serif; }
+
+ul {
+  padding-left: 20px;
+  margin: 20px 0; }
+  ul li {
+    color: #333132;
+    font-family: "ArcherPro-Book", sans-serif;
+    font-size: 15px;
+    font-size: 0.9375rem; }
+
+#post-page footer {
+  background-color: white; }
+
+#post-content img {
+  width: 100%;
+  margin: 20px auto; }
+
+#post-content p {
+  margin: 0 0 20px 0; }
+
+#post-nav {
+  padding: 0;
+  margin: 30px 0 0 0;
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #post-nav li {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+    #post-nav li:nth-child(2) {
+      text-align: right; }
+  #post-nav a {
+    color: #E36F1E;
+    text-transform: uppercase;
+    font-family: "ArcherPro-Semibold", sans-serif;
+    font-size: 20px;
+    font-size: 1.25rem;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    #post-nav a:hover {
+      color: #008CAD;
+      text-decoration: none; }
+
+#comments .form textarea {
+  height: 183px; }
+
+#resources-page footer {
+  background-color: white; }
 
 ::-webkit-scrollbar {
   width: 0.5em;

@@ -57,7 +57,7 @@ function initEditorResponsive() {
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 500) {
+    if (scroll >= 100) {
         $("header").addClass("smaller");
     } else {
         $("header").removeClass("smaller");
@@ -100,3 +100,19 @@ function initCarousel() {
 function initLettering() {
     $(".lettering").lettering();
 }
+
+/* SIDE MENU */
+$('.toggle-menu').click(function(){
+    if ( $('.side-menu').hasClass('open') ) {
+        $('.side-menu').removeClass('open');
+    } else {
+        $('.side-menu').addClass('open');
+    }
+});
+$('.overlay-menu').click(function(){
+    if ( $('.side-menu').hasClass('open') ) {
+        $('.side-menu').removeClass('open');
+    } else {
+        $('.side-menu').addClass('open');
+    }
+});

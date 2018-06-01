@@ -1,0 +1,56 @@
+#post-page {
+    footer {
+        background-color: $white;
+    }
+}
+
+#post-content {
+    img {
+        width: 100%;
+        margin: 20px auto;
+    }
+    p {
+        margin: 0 0 20px 0;
+    }
+}
+
+#post-nav {
+    padding: 0;
+    margin: 30px 0 0 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    
+    li {
+        flex-grow: 1;
+        
+        &:nth-child(2) {
+            text-align: right;
+        }
+        
+    }
+    
+    a {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-family: $semibold;
+        font-size: 20px;
+        @include font-size(20px);
+        transition: 0.3s;
+        
+        &:hover {
+            color: $terciary-color;
+            text-decoration: none;
+        }
+        
+    }
+    
+}
+
+#comments {
+    .form {
+        textarea {
+            height: 183px;
+        }
+    }
+}
