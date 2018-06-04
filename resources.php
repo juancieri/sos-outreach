@@ -273,7 +273,6 @@ require("part-head.php");
                                                 <th>Tuesday</th>
                                                 <th>Wednesday</th>
                                                 <th>Thursday</th>
-                                                <th>Thursday</th>
                                                 <th>Friday</th>
                                                 <th>Saturday</th>
                                                 <th>Sunday</th>
@@ -290,12 +289,48 @@ require("part-head.php");
                                             </tr>
                                             <tr>
                                                 <td><button type="button">2</button></td>
-                                                <td><button type="button" class="active">3</button></td>
+                                                <td class="active"><button type="button">3</button></td>
                                                 <td><button type="button">4</button></td>
                                                 <td><button type="button">5</button></td>
                                                 <td><button type="button">6</button></td>
                                                 <td><button type="button">7</button></td>
                                                 <td><button type="button">8</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button type="button">9</button></td>
+                                                <td><button type="button">10</button></td>
+                                                <td><button type="button">11</button></td>
+                                                <td class="active"><button type="button">12</button></td>
+                                                <td><button type="button">13</button></td>
+                                                <td><button type="button">14</button></td>
+                                                <td><button type="button">15</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button type="button">16</button></td>
+                                                <td><button type="button">17</button></td>
+                                                <td><button type="button">18</button></td>
+                                                <td><button type="button">19</button></td>
+                                                <td><button type="button">20</button></td>
+                                                <td><button type="button">21</button></td>
+                                                <td><button type="button">22</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button type="button">23</button></td>
+                                                <td><button type="button">24</button></td>
+                                                <td><button type="button">25</button></td>
+                                                <td><button type="button">26</button></td>
+                                                <td><button type="button">27</button></td>
+                                                <td><button type="button">28</button></td>
+                                                <td><button type="button">29</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button type="button">30</button></td>
+                                                <td><button type="button">31</button></td>
+                                                <td><button type="button"></button></td>
+                                                <td><button type="button"></button></td>
+                                                <td><button type="button"></button></td>
+                                                <td><button type="button"></button></td>
+                                                <td><button type="button"></button></td>
                                             </tr>
                                         </tbody>
                                     </table>
