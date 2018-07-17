@@ -35,5 +35,11 @@
 <script>
 new WOW().init();
 $("#newsletter-form").attr("data-toggle", "validator");
+$(".ecwd_calendar .events a").click(function(e){
+	e.preventDefault();
+});
+$(".impact-map img, .impact-img img").removeAttr('width').removeAttr('height');
+$(".impact-map img").addClass("img-responsive").attr('id', 'impact-map');
+$(".impact-img img").addClass("img-responsive");
 </script>
 
