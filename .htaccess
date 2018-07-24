@@ -1,8 +1,8 @@
-<FilesMatch "xmlrpc.php|admin-ajax.php|wp-login.php">
-   <RequireAll>
-     Require all granted
-   </RequireAll>
-</FilesMatch>
+#<FilesMatch "xmlrpc.php|admin-ajax.php|wp-login.php">
+#<RequireAll>
+#Require all granted
+#</RequireAll>
+#</FilesMatch>
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

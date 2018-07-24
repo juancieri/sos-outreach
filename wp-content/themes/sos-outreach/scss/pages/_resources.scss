@@ -1,0 +1,202 @@
+#resources-page {
+    footer {
+        background-color: $white;
+    }
+}
+
+.panel-group {
+    margin-bottom: 40px;
+    
+    .panel-heading {
+        padding: 0;
+        transition: 0.3s;
+    }
+    .panel-title a {
+        display: block;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $primary-color;
+        font-family: $medium;
+        font-size: 13px;
+        @include font-size(13px);
+        transition: 0.3s;
+        
+        &.collapsed {
+            color: $primary-color;
+            background-color: #f5f5f5;
+        }
+        
+        &:hover, &:focus {
+            color: $white;
+            text-decoration: none;
+            background-color: $primary-color;
+        }
+        
+    }
+    .panel-body, .panel-body p {
+        color: $black;
+        font-family: $book;
+        margin: 0 auto;
+        font-size: 15px;
+        @include font-size(15px);
+    }
+}
+
+.gray-block {
+    background-color: #f2f2f3;
+    padding: 15px;
+    margin: 0 0 30px 0;
+    .form {
+        a {
+            color: $primary-color;
+        }
+        &-control {
+            background-color: $white;
+        }
+    }
+}
+
+#calendar {
+    margin-bottom: 30px;
+}
+
+.calendar-header, .calendar-head, .ecwd_theme_calendar_grey .calendar-head {
+    background-color: $secondary-color !important;
+    color: $white !important;
+    font-family: $book !important;
+    
+    .current-month, .next, .previous {
+        border: none !important;
+        font-family: $book !important;
+    }
+    
+    a {
+        color: $white !important;
+        font-family: $book !important;
+        text-transform: uppercase !important;
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    li {
+        display: inline;
+        flex-grow: 1;
+        padding: 0px 15px;
+        
+        &:first-child {
+            text-align: right;
+        }
+        
+        &:last-child {
+            text-align: left;
+        }
+        
+        a {
+            color: $white;
+            display: inline-block;
+            padding: 10px;
+            font-size: 19px;
+            @include font-size(19px);
+        }
+        
+    }
+    
+    h4 {
+        text-transform: uppercase;
+        color: $white;
+        font-family: $semibold;
+        font-size: 19px;
+        @include font-size(19px);
+        margin: 0;
+    }
+    
+}
+
+.day-heading {
+    background-color: $secondary-color !important;
+}
+.has-events .events {
+    background-color: $secondary-color !important;
+}
+.day-number {
+    color: $white !important;
+    font-family: $medium !important;
+    .no-events & {
+        color: #3f3f3f !important;
+    }
+}
+
+.ecwd_theme_calendar_grey .cal_blue.ecwd_calendar_container .events a, .ecwd_theme_calendar_grey .cal_blue.ecwd_calendar_container .events span.ecwd_open_event_popup {
+    color: $terciary-color !important;
+}
+
+.calendar-body {
+    background-color: #f2f2f3;
+    padding: 15px;
+    
+    th {
+        background-color: $terciary-color;
+        color: $white;
+        text-align: center;
+        font-family: $medium;
+        font-weight: 400;
+        font-size: 15px;
+        @include font-size(15px);
+        padding: 10px;
+        border: none;
+    }
+    
+    td {
+        background-color: $white;
+        text-align: right;
+        color: #78909c;
+        font-size: 14px;
+        @include font-size(14px);
+        font-family: $medium;
+        font-weight: 400;
+        padding: 5px 10px 20px 15px !important;
+        
+        button {
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+        
+        &.active {
+            background-color: $secondary-color !important;
+        }
+        
+    }
+    
+    th, td {
+        border: 3px solid #f2f2f3 !important;
+    }
+
+}
+
+#calendar-results {
+    margin-bottom: 40px;
+}
+
+.result {
+    margin: 0 0 30px 0;
+    
+    h5 {
+        color: $primary-color;
+        font-size: 20px;
+        @include font-size(20px);
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: $medium;
+    }
+    
+}

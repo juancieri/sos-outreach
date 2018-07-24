@@ -3,36 +3,36 @@
 /* Developer URI: http://juancieri.com */
 @font-face {
   font-family: 'ArcherPro-Light';
-  src: url("../fonts/ArcherPro-Light.eot");
-  src: url("../fonts/ArcherPro-Light.woff2") format("woff2"), url("../fonts/ArcherPro-Light.woff") format("woff"), url("../fonts/ArcherPro-Light.ttf") format("truetype"), url("../fonts/ArcherPro-Light.svg#ArcherPro-Light") format("svg"), url("../fonts/ArcherPro-Light.eot?#iefix") format("embedded-opentype");
+  src: url("../../fonts/ArcherPro-Light.eot");
+  src: url("../../fonts/ArcherPro-Light.woff2") format("woff2"), url("../../fonts/ArcherPro-Light.woff") format("woff"), url("../../fonts/ArcherPro-Light.ttf") format("truetype"), url("../../fonts/ArcherPro-Light.svg#ArcherPro-Light") format("svg"), url("../../fonts/ArcherPro-Light.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ArcherPro-Book';
-  src: url("../fonts/ArcherPro-Book.eot");
-  src: url("../fonts/ArcherPro-Book.woff2") format("woff2"), url("../fonts/ArcherPro-Book.woff") format("woff"), url("../fonts/ArcherPro-Book.ttf") format("truetype"), url("../fonts/ArcherPro-Book.svg#ArcherPro-Book") format("svg"), url("../fonts/ArcherPro-Book.eot?#iefix") format("embedded-opentype");
+  src: url("../../fonts/ArcherPro-Book.eot");
+  src: url("../../fonts/ArcherPro-Book.woff2") format("woff2"), url("../../fonts/ArcherPro-Book.woff") format("woff"), url("../../fonts/ArcherPro-Book.ttf") format("truetype"), url("../../fonts/ArcherPro-Book.svg#ArcherPro-Book") format("svg"), url("../../fonts/ArcherPro-Book.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ArcherPro-Medium';
-  src: url("../fonts/ArcherPro-Medium.eot");
-  src: url("../fonts/ArcherPro-Medium.woff2") format("woff2"), url("../fonts/ArcherPro-Medium.woff") format("woff"), url("../fonts/ArcherPro-Medium.ttf") format("truetype"), url("../fonts/ArcherPro-Medium.svg#ArcherPro-Medium") format("svg"), url("../fonts/ArcherPro-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("../../fonts/ArcherPro-Medium.eot");
+  src: url("../../fonts/ArcherPro-Medium.woff2") format("woff2"), url("../../fonts/ArcherPro-Medium.woff") format("woff"), url("../../fonts/ArcherPro-Medium.ttf") format("truetype"), url("../../fonts/ArcherPro-Medium.svg#ArcherPro-Medium") format("svg"), url("../../fonts/ArcherPro-Medium.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ArcherPro-MediumItalic';
-  src: url("../fonts/ArcherPro-MediumItalic.eot");
-  src: url("../fonts/ArcherPro-MediumItalic.woff2") format("woff2"), url("../fonts/ArcherPro-MediumItalic.woff") format("woff"), url("../fonts/ArcherPro-MediumItalic.ttf") format("truetype"), url("../fonts/ArcherPro-MediumItalic.svg#ArcherPro-MediumItalic") format("svg"), url("../fonts/ArcherPro-MediumItalic.eot?#iefix") format("embedded-opentype");
+  src: url("../../fonts/ArcherPro-MediumItalic.eot");
+  src: url("../../fonts/ArcherPro-MediumItalic.woff2") format("woff2"), url("../../fonts/ArcherPro-MediumItalic.woff") format("woff"), url("../../fonts/ArcherPro-MediumItalic.ttf") format("truetype"), url("../../fonts/ArcherPro-MediumItalic.svg#ArcherPro-MediumItalic") format("svg"), url("../../fonts/ArcherPro-MediumItalic.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ArcherPro-Semibold';
-  src: url("../fonts/ArcherPro-Semibold.eot");
-  src: url("../fonts/ArcherPro-Semibold.woff2") format("woff2"), url("../fonts/ArcherPro-Semibold.woff") format("woff"), url("../fonts/ArcherPro-Semibold.ttf") format("truetype"), url("../fonts/ArcherPro-Semibold.svg#ArcherPro-Semibold") format("svg"), url("../fonts/ArcherPro-Semibold.eot?#iefix") format("embedded-opentype");
+  src: url("../../fonts/ArcherPro-Semibold.eot");
+  src: url("../../fonts/ArcherPro-Semibold.woff2") format("woff2"), url("../../fonts/ArcherPro-Semibold.woff") format("woff"), url("../../fonts/ArcherPro-Semibold.ttf") format("truetype"), url("../../fonts/ArcherPro-Semibold.svg#ArcherPro-Semibold") format("svg"), url("../../fonts/ArcherPro-Semibold.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
@@ -182,13 +182,10 @@ section {
     width: 100%;
     height: 70px;
     background-color: transparent;
-    background-image: url(../img/separator-before-white.svg);
+    background-image: url(../../img/separator-before-white.svg);
     background-repeat: repeat-x;
     background-position: center center;
-    background-size: 110%; }
-    @media screen and (max-width: 1200px) {
-      .bg-white.separator-before:before {
-        background-size: 110% 100%; } }
+    background-size: cover; }
 
 .bg-lightgray {
   background-color: #E6E7E8; }
@@ -201,10 +198,10 @@ section {
     width: 100%;
     height: 75px;
     background-color: transparent;
-    background-image: url(../img/separator-before-lightgray.svg);
+    background-image: url(../../img/separator-before-lightgray.svg);
     background-repeat: repeat-x;
     background-position: bottom center;
-    background-size: 110%; }
+    background-size: cover; }
 
 .bg-gray {
   background-color: #DCDDDE; }
@@ -217,10 +214,10 @@ section {
     width: 100%;
     height: 170px;
     background-color: #E6E7E8;
-    background-image: url(../img/separator-before-gray.svg);
+    background-image: url(../../img/separator-before-gray.svg);
     background-repeat: repeat-x;
     background-position: top center;
-    background-size: 100%; }
+    background-size: cover; }
   .bg-gray.separator-before.white:before {
     background-color: white; }
 
@@ -237,7 +234,7 @@ section {
   .section-title:before {
     content: "";
     position: absolute;
-    background-image: url(../img/title-icon.svg);
+    background-image: url(../../img/title-icon.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -338,6 +335,11 @@ header {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+    header .btn-menu a {
+      color: white; }
+      header .btn-menu a:hover {
+        text-decoration: none;
+        color: white; }
 
 .logo {
   -webkit-transition: 0.3s;
@@ -510,7 +512,7 @@ header {
 footer {
   padding-bottom: 64px;
   padding-top: 390px;
-  background-image: url(../img/footer-bg.png);
+  background-image: url(../../img/footer-bg.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 100% 100%; }
@@ -964,10 +966,18 @@ ul {
 #calendar {
   margin-bottom: 30px; }
 
-.calendar-header {
-  background-color: #CFDE00;
-  color: white; }
-  .calendar-header ul {
+.calendar-header, .calendar-head, .ecwd_theme_calendar_grey .calendar-head {
+  background-color: #CFDE00 !important;
+  color: white !important;
+  font-family: "ArcherPro-Book", sans-serif !important; }
+  .calendar-header .current-month, .calendar-header .next, .calendar-header .previous, .calendar-head .current-month, .calendar-head .next, .calendar-head .previous, .ecwd_theme_calendar_grey .calendar-head .current-month, .ecwd_theme_calendar_grey .calendar-head .next, .ecwd_theme_calendar_grey .calendar-head .previous {
+    border: none !important;
+    font-family: "ArcherPro-Book", sans-serif !important; }
+  .calendar-header a, .calendar-head a, .ecwd_theme_calendar_grey .calendar-head a {
+    color: white !important;
+    font-family: "ArcherPro-Book", sans-serif !important;
+    text-transform: uppercase !important; }
+  .calendar-header ul, .calendar-head ul, .ecwd_theme_calendar_grey .calendar-head ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -978,29 +988,44 @@ ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .calendar-header li {
+  .calendar-header li, .calendar-head li, .ecwd_theme_calendar_grey .calendar-head li {
     display: inline;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     padding: 0px 15px; }
-    .calendar-header li:first-child {
+    .calendar-header li:first-child, .calendar-head li:first-child, .ecwd_theme_calendar_grey .calendar-head li:first-child {
       text-align: right; }
-    .calendar-header li:last-child {
+    .calendar-header li:last-child, .calendar-head li:last-child, .ecwd_theme_calendar_grey .calendar-head li:last-child {
       text-align: left; }
-    .calendar-header li a {
+    .calendar-header li a, .calendar-head li a, .ecwd_theme_calendar_grey .calendar-head li a {
       color: white;
       display: inline-block;
       padding: 10px;
       font-size: 19px;
       font-size: 1.1875rem; }
-  .calendar-header h4 {
+  .calendar-header h4, .calendar-head h4, .ecwd_theme_calendar_grey .calendar-head h4 {
     text-transform: uppercase;
     color: white;
     font-family: "ArcherPro-Semibold", sans-serif;
     font-size: 19px;
     font-size: 1.1875rem;
     margin: 0; }
+
+.day-heading {
+  background-color: #CFDE00 !important; }
+
+.has-events .events {
+  background-color: #CFDE00 !important; }
+
+.day-number {
+  color: white !important;
+  font-family: "ArcherPro-Medium", sans-serif !important; }
+  .no-events .day-number {
+    color: #3f3f3f !important; }
+
+.ecwd_theme_calendar_grey .cal_blue.ecwd_calendar_container .events a, .ecwd_theme_calendar_grey .cal_blue.ecwd_calendar_container .events span.ecwd_open_event_popup {
+  color: #008CAD !important; }
 
 .calendar-body {
   background-color: #f2f2f3;
@@ -1061,35 +1086,27 @@ body {
   scrollbar-face-color: #E36F1E;
   scrollbar-track-color: #f1b78f; }
 
-  
-/**************************************LEANDRO*********************************/
 blockquote p {
-    color: #E36F1E;
-    text-align: center;
-    font-family: "ArcherPro-MediumItalic", sans-serif;
-    font-size: 20px;
-    font-size: 1.25rem;
-    border: none;
-    position: relative;
-    margin-top: 70px;
-}
-  
+  color: #E36F1E;
+  text-align: center;
+  font-family: "ArcherPro-MediumItalic", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  border: none;
+  position: relative;
+  margin-top: 70px; }
+
 .section {
-	padding: 40px 0;
-    position: relative;
-}
+  padding: 40px 0;
+  position: relative; }
 
 .map-column img {
-	margin: 50px auto;
-}
+  margin: 50px auto; }
 
 .wpcf7-response-output {
-	display: none !important;
-}
+  display: none !important; }
 
-#aboutUs-page .img-responsive img{
-	display: block;
-    max-width: 100%;
-    height: auto;
-} 
-  
+#aboutUs-page .img-responsive img {
+  display: block;
+  max-width: 100%;
+  height: auto; }

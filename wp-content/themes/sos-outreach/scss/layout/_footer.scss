@@ -1,0 +1,27 @@
+// FOOTER
+footer {
+    padding-bottom: 64px;
+    padding-top: 390px;
+    background-image: url(../../img/footer-bg.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    #contact & {
+        background-color: $white;
+    }
+    
+    .social {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        li {
+            display: inline-block;
+        }
+    }
+    
+    img {
+        margin: 0 auto;
+    }
+    
+}

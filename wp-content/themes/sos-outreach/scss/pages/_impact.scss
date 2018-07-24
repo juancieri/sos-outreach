@@ -1,0 +1,69 @@
+#impact-page {
+    #faces-of-sos, #join-the-family, footer {
+        background-color: $white;
+    }
+    #faces-of-sos {
+        margin-top: 100px;
+    }
+}
+
+.number-item {
+    max-width: 195px;
+    margin: 0 auto 40px auto;
+    
+    span {
+        background-color: $secondary-color;
+        padding: 20px 15px;
+        text-align: center;
+        @include border-radius(42%);
+        display: block;
+        color: $black;
+        font-family: $medium;
+        font-size: 95px;
+        @include font-size(95px);
+        margin: 0 0 30px 0;
+    }
+    
+}
+
+blockquote {
+    color: $primary-color;
+    text-align: center;
+    font-family: $italic;
+    font-size: 20px;
+    @include font-size(20px);
+    border: none;
+    position: relative;
+    margin-top: 70px;
+    
+    &:before {
+        content: "“";
+        position: absolute;
+        top: -20px;
+        font-size: 100px;
+        @include font-size(100px);
+        line-height: 0;
+        left: 50%;
+        transform: translate(-20px);
+    }
+    
+    span {
+        display: block;
+        margin-top: 30px;
+        font-family: $medium;
+    }
+    
+}
+
+ul {
+    padding-left: 20px;
+    margin: 20px 0;
+    
+    li {
+        color: $black;
+        font-family: $book;
+        font-size: 15px;
+        @include font-size(15px);
+    }
+    
+}

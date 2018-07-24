@@ -41,11 +41,7 @@ if ( !function_exists('wpb_af_shortcode_function') ){
                                <?php while ($wp_query->have_posts()) : $wp_query->the_post();?>
                                <div class="panel panel-default">
                                   <div class="panel-heading" role="tab" id="heading<?php the_ID(); ?>">
-                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion<?php echo $wpb_af_id ?>" href="#collapse<?php the_ID(); ?>" aria-expanded="false" aria-controls="collapse<?php the_ID(); ?>">
-                                        <?php the_title(); ?>
-                                        </a>
-                                     </h4>
+                                     <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion<?php echo $wpb_af_id ?>" href="#collapse<?php the_ID(); ?>" aria-expanded="false" aria-controls="collapse<?php the_ID(); ?>"><?php the_title(); ?></a></h4>
                                   </div>
                                   <div id="collapse<?php the_ID(); ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php the_ID(); ?>">
                                      <div class="panel-body"><?php the_content(); ?></div>
