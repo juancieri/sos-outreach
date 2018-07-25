@@ -820,6 +820,10 @@ footer {
   font-size: 18px;
   font-size: 1.125rem; }
 
+.map-container img {
+  width: 100%;
+  height: auto; }
+
 #impact-page #faces-of-sos, #impact-page #join-the-family, #impact-page footer {
   background-color: white; }
 

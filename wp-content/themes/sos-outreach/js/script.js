@@ -72,7 +72,7 @@ function initCarousel() {
         loop:false,
         margin:30,
         lazyLoad:false,
-        center:false,
+        center:true,
         nav: true,
         navText: [
            "<i class='fa fa-angle-left fa-2x' aria-hidden='true'></i>",
